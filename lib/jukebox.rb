@@ -18,9 +18,7 @@ def play(songs)
   inputs = gets.chomp
   if songs.include?(inputs)
     puts "Playing #{inputs}"
-    elsif inputs.to_i < songs.length 
-      puts "Playing #{songs[inputs.to_i]}"
-    else
+  else
       puts "Invalid input, please try again"
   end
   
