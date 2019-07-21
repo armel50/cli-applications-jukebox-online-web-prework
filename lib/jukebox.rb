@@ -23,7 +23,7 @@ def play(songs)
       if isNum && inputs.to_i <songs.length
         puts "Playing #{inputs.to_i}"
       else
-        puts ""
+        puts "Invalid input, please try again"
       end
   end
   
