@@ -19,7 +19,12 @@ def play(songs)
   if songs.include?(inputs)
     puts "Playing #{inputs}"
   else
-      inputs= inputs.
+       isNum= Integer(inputs) rescue false 
+      if isNum && inputs.to_i <songs.length
+        puts "Playing #{inputs.to_i}"
+      else
+        puts ""
+      end
   end
   
   
