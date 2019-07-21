@@ -21,7 +21,7 @@ def play(songs)
   else
        isNum= Integer(inputs) rescue false 
       if isNum != false && inputs.to_i < songs.length
-        puts "Playing #{songs[inputs.to_i]}"
+        puts "Playing #{songs[inputs.to_i - 1]}"
       else
         puts "Invalid input, please try again"
       end
